@@ -2,14 +2,16 @@ import 'ol/ol.css';
 import {fromLonLat} from 'ol/proj';
 import {Map, View} from 'ol';
 import {Vector as VectorLayer, Tile as TileLayer} from 'ol/layer';
-import {Vector as VectorSource, Stamen} from 'ol/source';
+import XYZSource from 'ol/source/XYZ';
+import {Vector as VectorSource} from 'ol/source';
 import Feature from 'ol/Feature';
 import Point from 'ol/geom/Point';
+import {transform} from 'ol/proj.js';
 
 const source = new VectorSource();
 
 const client = new XMLHttpRequest();
-client.open('GET', 'data/meteorites.csv');
+client.open('GET', 'data/power1.csv');
 client.onload = function() {
   const csv = client.responseText;
   const features = [];
@@ -21,7 +23,7 @@ client.onload = function() {
     const line = csv.substr(prevIndex, curIndex - prevIndex).split(',');
     prevIndex = curIndex + 1;
 
-    const coords = fromLonLat([parseFloat(line[4]), parseFloat(line[3])]);
+    const coords = fromLonLat([parseFloat(line[1]), parseFloat(line[2])]);
     if (isNaN(coords[0]) || isNaN(coords[1])) {
       // guard against bad data
       continue;
@@ -29,8 +31,8 @@ client.onload = function() {
 
     features.push(
       new Feature({
-        mass: parseFloat(line[1]) || 0,
-        year: parseInt(line[2]) || 0,
+        name: parseFloat(line[0]) || 0,
+        // year: parseInt(line[2]) || 0,
         geometry: new Point(coords)
       })
     );
@@ -43,8 +45,8 @@ new Map({
   target: 'map-container',
   layers: [
     new TileLayer({
-      source: new Stamen({
-        layer: 'toner'
+      source: new XYZSource({
+        url: 'http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg'
       })
     }),
     new VectorLayer({
@@ -52,7 +54,7 @@ new Map({
     })
   ],
   view: new View({
-    center: [0, 0],
-    zoom: 2
+    center: transform([103.8, 1.6], 'EPSG:4326', 'EPSG:3857'),
+    zoom: 11
   })
 });
