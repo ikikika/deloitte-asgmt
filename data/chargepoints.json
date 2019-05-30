@@ -1,0 +1,3413 @@
+[
+  {
+    "ID": 95820,
+    "UUID": "A8A33514-A91B-4817-8080-0505A22B11BF",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 45,
+    "OperatorInfo": {
+      "WebsiteURL": null,
+      "Comments": "For use when the operator of the equipment is a single business owner connected to the location and equipment is not part of a larger network",
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": null,
+      "ID": 45,
+      "Title": "(Business Owner at Location)"
+    },
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "UsageCost": "Unknown. Parking fees apply",
+    "AddressInfo": {
+      "ID": 96166,
+      "Title": "IKEA Tebrau",
+      "AddressLine1": "33 Jalan Harmonium",
+      "AddressLine2": "23/13 Taman Desa Jaya",
+      "Town": "Johor Bahru",
+      "StateOrProvince": "Johor",
+      "Postcode": "81100",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 1.5525571709246004,
+      "Longitude": 103.7979128174743,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": null,
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 2,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2017-11-25T19:44:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2017-11-25T19:44:00Z",
+    "SubmissionStatusTypeID": 200,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 135726,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": null,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": 2,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 67844,
+    "UUID": "806F5EE6-527C-43F2-B360-B18F5E699220",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "91600",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014330",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 68190,
+      "Title": "SILK",
+      "AddressLine1": "SILK",
+      "AddressLine2": null,
+      "Town": "Balakong",
+      "StateOrProvince": null,
+      "Postcode": "43300",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.02863718047523,
+      "Longitude": 101.719263179307,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-06-04T02:37:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 94407,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 65333,
+    "UUID": "6B959FFA-2FF7-4426-B9E2-0D6B7DAD5BED",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "74833",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014278",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 65679,
+      "Title": "Menara MBPJ",
+      "AddressLine1": "Menara MBPJ",
+      "AddressLine2": null,
+      "Town": "Petaling Jaya",
+      "StateOrProvince": null,
+      "Postcode": "46000",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.0975030000999,
+      "Longitude": 101.644430076582,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-04-27T09:41:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 90013,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 65334,
+    "UUID": "B1FCA691-4F5C-4DE2-A75F-D1DC919C25E9",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "86754",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014771",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 65680,
+      "Title": "Lebuhraya Damansara-Puchong",
+      "AddressLine1": "Lebuhraya Damansara-Puchong",
+      "AddressLine2": null,
+      "Town": "Petaling Jaya",
+      "StateOrProvince": null,
+      "Postcode": "47301",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.10508084393876,
+      "Longitude": 101.596059009926,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-04-27T09:41:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 90014,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 90015,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 65335,
+    "UUID": "8DA8A26F-C572-4302-8405-BCCF34689296",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "83835",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014145",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 65681,
+      "Title": "Pintu Barat",
+      "AddressLine1": "Pintu Barat",
+      "AddressLine2": null,
+      "Town": "Klang",
+      "StateOrProvince": null,
+      "Postcode": "40170",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.11026828201771,
+      "Longitude": 101.46009667791,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-04-27T09:41:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 90016,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 90017,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 65150,
+    "UUID": "1FA32876-5AE4-4518-AA2F-EF769386CEEA",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 45,
+    "OperatorInfo": {
+      "WebsiteURL": null,
+      "Comments": "For use when the operator of the equipment is a single business owner connected to the location and equipment is not part of a larger network",
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": null,
+      "ID": 45,
+      "Title": "(Business Owner at Location)"
+    },
+    "OperatorsReference": null,
+    "UsageTypeID": 6,
+    "UsageType": {
+      "IsPayAtLocation": false,
+      "IsMembershipRequired": false,
+      "IsAccessKeyRequired": false,
+      "ID": 6,
+      "Title": "Private - For Staff, Visitors or Customers"
+    },
+    "UsageCost": null,
+    "AddressInfo": {
+      "ID": 65496,
+      "Title": "Acson Malaysia Sales & Service Sdn. Bhd.",
+      "AddressLine1": "Lot 4, Lorong 19/1A, Seksyen 19",
+      "AddressLine2": null,
+      "Town": "Petaling Jaya",
+      "StateOrProvince": "Selangor Darul Ehsan",
+      "Postcode": "46300",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.0738379,
+      "Longitude": 101.5183469,
+      "ContactTelephone1": "+603 7964 8200",
+      "ContactTelephone2": null,
+      "ContactEmail": "acson@acson.com.my",
+      "AccessComments": null,
+      "RelatedURL": "https://acson.com.my",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 9,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-04-25T21:07:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2016-04-15T13:01:00Z",
+    "SubmissionStatusTypeID": 200,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": [
+      {
+        "ID": 10184,
+        "ChargePointID": 65150,
+        "CommentTypeID": 100,
+        "CommentType": {
+          "ID": 100,
+          "Title": "Suggested Change (Note To Editors)"
+        },
+        "UserName": "Hender Son",
+        "Comment": null,
+        "Rating": 5,
+        "RelatedURL": null,
+        "DateCreated": "2016-04-15T13:12:40.6Z",
+        "User": {
+          "ID": 9244,
+          "IdentityProvider": null,
+          "Identifier": null,
+          "CurrentSessionToken": null,
+          "Username": "Hender Son",
+          "Profile": null,
+          "Location": null,
+          "WebsiteURL": null,
+          "ReputationPoints": 3,
+          "Permissions": null,
+          "PermissionsRequested": null,
+          "DateCreated": null,
+          "DateLastLogin": null,
+          "IsProfilePublic": null,
+          "IsEmergencyChargingProvider": null,
+          "IsPublicChargingProvider": null,
+          "Latitude": null,
+          "Longitude": null,
+          "EmailAddress": null,
+          "EmailHash": null,
+          "ProfileImageURL": "https://www.gravatar.com/avatar/da7ce9196d156d6d70a6b43e1af0ccb8?s=80&d=robohash",
+          "IsCurrentSessionTokenValid": null,
+          "APIKey": null,
+          "SyncedSettings": null
+        },
+        "CheckinStatusTypeID": 200,
+        "CheckinStatusType": {
+          "IsPositive": false,
+          "IsAutomatedCheckin": false,
+          "ID": 200,
+          "Title": "Other (Negative/Bad)"
+        },
+        "IsActionedByEditor": null
+      }
+    ],
+    "PercentageSimilarity": null,
+    "Connections": [],
+    "MediaItems": [
+      {
+        "ID": 6235,
+        "ChargePointID": 65150,
+        "ItemURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/MY/OCM65150/OCM-65150.orig.2016041513170266.png",
+        "ItemThumbnailURL": "https://s3-ap-southeast-2.amazonaws.com/openchargemap/images/MY/OCM65150/OCM-65150.thmb.2016041513170266.png",
+        "Comment": "Acson air conditioner Logo",
+        "IsEnabled": true,
+        "IsVideo": false,
+        "IsFeaturedItem": false,
+        "IsExternalResource": false,
+        "MetadataValue": null,
+        "User": {
+          "ID": 9244,
+          "IdentityProvider": null,
+          "Identifier": null,
+          "CurrentSessionToken": null,
+          "Username": "Hender Son",
+          "Profile": null,
+          "Location": null,
+          "WebsiteURL": null,
+          "ReputationPoints": 3,
+          "Permissions": null,
+          "PermissionsRequested": null,
+          "DateCreated": null,
+          "DateLastLogin": null,
+          "IsProfilePublic": null,
+          "IsEmergencyChargingProvider": null,
+          "IsPublicChargingProvider": null,
+          "Latitude": null,
+          "Longitude": null,
+          "EmailAddress": null,
+          "EmailHash": null,
+          "ProfileImageURL": "https://www.gravatar.com/avatar/da7ce9196d156d6d70a6b43e1af0ccb8?s=80&d=robohash",
+          "IsCurrentSessionTokenValid": null,
+          "APIKey": null,
+          "SyncedSettings": null
+        },
+        "DateCreated": "2016-04-15T13:17:00Z"
+      }
+    ],
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62521,
+    "UUID": "1EC4E540-ACC3-4D53-9300-C7AB6AD66CFB",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "76112",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014356",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62867,
+      "Title": "Jalan Molek 1/27",
+      "AddressLine1": "Jalan Molek 1/27",
+      "AddressLine2": null,
+      "Town": "Johor Bahru",
+      "StateOrProvince": null,
+      "Postcode": "81100",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 1.52518037482521,
+      "Longitude": 103.784269860119,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79435,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 79436,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62522,
+    "UUID": "EC40E84A-83A7-464F-9638-6D463B6B454C",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "79166",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02013924",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62868,
+      "Title": "Jalan Tun Perak",
+      "AddressLine1": "Jalan Tun Perak",
+      "AddressLine2": null,
+      "Town": "Melaka",
+      "StateOrProvince": null,
+      "Postcode": "75300",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 2.209708,
+      "Longitude": 102.243628,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79437,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 79438,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62523,
+    "UUID": "FACF7F67-CE8E-4840-B52C-E32873A16793",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "83024",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014429",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62869,
+      "Title": "Jalan Klebang",
+      "AddressLine1": "Jalan Klebang",
+      "AddressLine2": null,
+      "Town": "Kelebang Besar",
+      "StateOrProvince": null,
+      "Postcode": "75250",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 2.21638,
+      "Longitude": 102.194365,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79439,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62524,
+    "UUID": "9A592410-C05A-4801-B4B6-C4DC7F702E71",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "83118",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014689",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62870,
+      "Title": "5",
+      "AddressLine1": "5",
+      "AddressLine2": null,
+      "Town": "Melaka Tengah",
+      "StateOrProvince": null,
+      "Postcode": "76300",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 2.2901735,
+      "Longitude": 102.1396378,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79440,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62525,
+    "UUID": "DE3FAE90-9996-4E19-AF7A-42DE4FC40B3B",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "79165",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02013045",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62871,
+      "Title": "Persiaran APEC",
+      "AddressLine1": "Persiaran APEC",
+      "AddressLine2": null,
+      "Town": "Cyberjaya",
+      "StateOrProvince": null,
+      "Postcode": "63000",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 2.90722110779707,
+      "Longitude": 101.656301047816,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79441,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 79442,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62527,
+    "UUID": "1F5EC6E9-B607-4A1D-B7EC-7EB77935B934",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "79215",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014336",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62873,
+      "Title": "Persiaran Semarak Api",
+      "AddressLine1": "Persiaran Semarak Api",
+      "AddressLine2": null,
+      "Town": "Cyberia",
+      "StateOrProvince": null,
+      "Postcode": "63000",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 2.93814578683156,
+      "Longitude": 101.644753046627,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79444,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62528,
+    "UUID": "D3475A35-FE05-43BE-8710-DA54164941C9",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "74255",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02012669",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62874,
+      "Title": "NPE",
+      "AddressLine1": "NPE",
+      "AddressLine2": null,
+      "Town": "PJS10",
+      "StateOrProvince": null,
+      "Postcode": "45500",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.07263807011829,
+      "Longitude": 101.601058162457,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79445,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62529,
+    "UUID": "74525B5F-EF4A-401B-912B-FC2601A2556A",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "77607",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02013575",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62875,
+      "Title": "Jalan 13/6",
+      "AddressLine1": "Jalan 13/6",
+      "AddressLine2": null,
+      "Town": "Petaling Jaya",
+      "StateOrProvince": null,
+      "Postcode": "46000",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.11772396783834,
+      "Longitude": 101.63547043055,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79446,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 79447,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62530,
+    "UUID": "84C823FA-DC23-4125-8451-DF37394D1C54",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "82963",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02013215",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62876,
+      "Title": "Jalan Pudu",
+      "AddressLine1": "Jalan Pudu",
+      "AddressLine2": null,
+      "Town": "Sentul",
+      "StateOrProvince": null,
+      "Postcode": "50150",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.14419108835014,
+      "Longitude": 101.705908981229,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79448,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 79449,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 62531,
+    "UUID": "5F0AFCDD-5AFE-4579-A0FD-BDE4D899AB9E",
+    "ParentChargePointID": null,
+    "DataProviderID": 26,
+    "DataProvider": {
+      "WebsiteURL": "http://www.oplaadpalen.nl/",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 20,
+        "Title": "Automated Import"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/",
+      "DateLastImported": "2016-06-04T03:04:53.05Z",
+      "ID": 26,
+      "Title": "Oplaadpalen.nl"
+    },
+    "DataProvidersReference": "75519",
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014828",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 62877,
+      "Title": "Jalan PJU 7/3",
+      "AddressLine1": "Jalan PJU 7/3",
+      "AddressLine2": null,
+      "Town": "Petaling Jaya",
+      "StateOrProvince": null,
+      "Postcode": "47800",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.15827036999565,
+      "Longitude": 101.612484654106,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2016-06-04T02:37:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2016-03-03T12:28:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 79450,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 3.7,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 57456,
+    "UUID": "4271715C-9EA1-4D8A-9987-8763A62F7712",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014804",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 57802,
+      "Title": "Jalan Usahawan 2",
+      "AddressLine1": "Jalan Usahawan 2",
+      "AddressLine2": null,
+      "Town": "Cyberjaya",
+      "StateOrProvince": null,
+      "Postcode": "63000",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 2.926689,
+      "Longitude": 101.662598,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-11-30T21:15:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2015-11-30T12:42:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 72575,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 72576,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 57457,
+    "UUID": "DABAC6A8-C5ED-414D-9271-925BBBBB11DA",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02012817",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 57803,
+      "Title": "Persiaran Bakti",
+      "AddressLine1": "Persiaran Bakti",
+      "AddressLine2": null,
+      "Town": "Subang Jaya",
+      "StateOrProvince": null,
+      "Postcode": "47610",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.051596,
+      "Longitude": 101.582347,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-11-30T21:17:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2015-11-30T12:42:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 72577,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      },
+      {
+        "ID": 72578,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 57458,
+    "UUID": "7C2B0BE1-6C27-4E84-AE00-9E7A7F916ADB",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02012669",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 57804,
+      "Title": "E10",
+      "AddressLine1": "E10",
+      "AddressLine2": null,
+      "Town": "Subang Jaya",
+      "StateOrProvince": null,
+      "Postcode": "47500",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.072622,
+      "Longitude": 101.5979468,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-11-30T21:18:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2015-11-30T12:42:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 72579,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 57459,
+    "UUID": "6C57B377-6883-405A-8C65-B65E854FD37B",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02014278",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 57805,
+      "Title": "Jalan 52/1 33",
+      "AddressLine1": "Jalan 52/1 33",
+      "AddressLine2": null,
+      "Town": "Petaling Jaya",
+      "StateOrProvince": null,
+      "Postcode": "46200",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.09918,
+      "Longitude": 101.6450899,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-11-30T21:19:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2015-11-30T12:42:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 72580,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 57460,
+    "UUID": "55E486A7-79FC-4BD8-9D7A-9FCF43AF26DB",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02012723",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 57806,
+      "Title": "Persiaran Petronas",
+      "AddressLine1": "Persiaran Petronas",
+      "AddressLine2": null,
+      "Town": "Kuala Lumpur",
+      "StateOrProvince": null,
+      "Postcode": "50088",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 3.1559369,
+      "Longitude": 101.7117102,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-11-30T21:19:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2015-11-30T12:42:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 72581,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 57461,
+    "UUID": "BB670748-AC23-4DD0-B96E-82A857D70B93",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02012730",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 57807,
+      "Title": "Lebuh Laguna Merbok 2",
+      "AddressLine1": "Lebuh Laguna Merbok 2",
+      "AddressLine2": null,
+      "Town": "Sungai Petani",
+      "StateOrProvince": null,
+      "Postcode": "8000",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 5.683502,
+      "Longitude": 100.493956,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-11-30T21:21:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2015-11-30T12:42:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 72582,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 53546,
+    "UUID": "4EFD5B48-0D21-4EBE-A1A0-6963F9000B85",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 157,
+    "OperatorInfo": {
+      "WebsiteURL": "http://www.thenewmotion.be/",
+      "Comments": null,
+      "PhonePrimaryContact": " +32 (0)2 588 1251",
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": false,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": "info@thenewmotion.be",
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": false,
+      "ID": 157,
+      "Title": "The New Motion (BE)"
+    },
+    "OperatorsReference": "NewMotion 02012796",
+    "UsageTypeID": null,
+    "UsageType": null,
+    "UsageCost": "0.00 jaarabonnement",
+    "AddressInfo": {
+      "ID": 53892,
+      "Title": "Jalan 9/10",
+      "AddressLine1": "Jalan 9/10",
+      "AddressLine2": null,
+      "Town": "Bandar Baru Bangi",
+      "StateOrProvince": null,
+      "Postcode": "43650",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 2.95731570182009,
+      "Longitude": 101.751333322754,
+      "ContactTelephone1": "088 0109500",
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": null,
+      "RelatedURL": "http://thenewmotion.nl/",
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-12-01T09:00:00Z",
+    "DataQualityLevel": 3,
+    "DateCreated": "2015-09-20T11:50:00Z",
+    "SubmissionStatusTypeID": 100,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 100,
+      "Title": "Imported and Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 66667,
+        "ConnectionTypeID": 25,
+        "ConnectionType": {
+          "FormalName": "IEC 62196-2 Type 2",
+          "IsDiscontinued": false,
+          "IsObsolete": false,
+          "ID": 25,
+          "Title": "Mennekes (Type 2)"
+        },
+        "Reference": null,
+        "StatusTypeID": null,
+        "StatusType": null,
+        "LevelID": 2,
+        "Level": {
+          "Comments": "Over 2 kW, usually non-domestic socket type",
+          "IsFastChargeCapable": false,
+          "ID": 2,
+          "Title": "Level 2 : Medium (Over 2kW)"
+        },
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": 37.0,
+        "CurrentTypeID": 10,
+        "CurrentType": {
+          "Description": "Alternating Current - Single Phase",
+          "ID": 10,
+          "Title": "AC (Single-Phase)"
+        },
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  },
+  {
+    "ID": 41864,
+    "UUID": "091F38EA-D719-40CF-9DB6-98E19AA2E22C",
+    "ParentChargePointID": null,
+    "DataProviderID": 1,
+    "DataProvider": {
+      "WebsiteURL": "http://openchargemap.org",
+      "Comments": null,
+      "DataProviderStatusType": {
+        "IsProviderEnabled": true,
+        "ID": 1,
+        "Title": "Manual Data Entry"
+      },
+      "IsRestrictedEdit": false,
+      "IsOpenDataLicensed": true,
+      "IsApprovedImport": true,
+      "License": "Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+      "DateLastImported": null,
+      "ID": 1,
+      "Title": "Open Charge Map Contributors"
+    },
+    "DataProvidersReference": null,
+    "OperatorID": 1,
+    "OperatorInfo": {
+      "WebsiteURL": null,
+      "Comments": null,
+      "PhonePrimaryContact": null,
+      "PhoneSecondaryContact": null,
+      "IsPrivateIndividual": null,
+      "AddressInfo": null,
+      "BookingURL": null,
+      "ContactEmail": null,
+      "FaultReportEmail": null,
+      "IsRestrictedEdit": null,
+      "ID": 1,
+      "Title": "(Unknown Operator)"
+    },
+    "OperatorsReference": null,
+    "UsageTypeID": 1,
+    "UsageType": {
+      "IsPayAtLocation": null,
+      "IsMembershipRequired": null,
+      "IsAccessKeyRequired": null,
+      "ID": 1,
+      "Title": "Public"
+    },
+    "UsageCost": "Free",
+    "AddressInfo": {
+      "ID": 42210,
+      "Title": "Straits Quay Carpark",
+      "AddressLine1": "Straits Quay",
+      "AddressLine2": "Seri Tanjung Pinang",
+      "Town": "Tanjung Tokong",
+      "StateOrProvince": "Penang",
+      "Postcode": "10470",
+      "CountryID": 137,
+      "Country": {
+        "ISOCode": "MY",
+        "ContinentCode": "AS",
+        "ID": 137,
+        "Title": "Malaysia"
+      },
+      "Latitude": 5.457148,
+      "Longitude": 100.31297,
+      "ContactTelephone1": null,
+      "ContactTelephone2": null,
+      "ContactEmail": null,
+      "AccessComments": "Carpark entrance on right of mall, first carpark biulding after going through barrier. Second floor, dedicated EV carparking space.",
+      "RelatedURL": null,
+      "Distance": null,
+      "DistanceUnit": 0
+    },
+    "NumberOfPoints": 1,
+    "GeneralComments": null,
+    "DatePlanned": null,
+    "DateLastConfirmed": null,
+    "StatusTypeID": 50,
+    "StatusType": {
+      "IsOperational": true,
+      "IsUserSelectable": true,
+      "ID": 50,
+      "Title": "Operational"
+    },
+    "DateLastStatusUpdate": "2015-02-16T20:48:00Z",
+    "DataQualityLevel": 1,
+    "DateCreated": "2015-02-13T18:23:00Z",
+    "SubmissionStatusTypeID": 200,
+    "SubmissionStatus": {
+      "IsLive": true,
+      "ID": 200,
+      "Title": "Submission Published"
+    },
+    "UserComments": null,
+    "PercentageSimilarity": null,
+    "Connections": [
+      {
+        "ID": 50186,
+        "ConnectionTypeID": 0,
+        "ConnectionType": {
+          "FormalName": "Not Specified",
+          "IsDiscontinued": null,
+          "IsObsolete": null,
+          "ID": 0,
+          "Title": "Unknown"
+        },
+        "Reference": null,
+        "StatusTypeID": 50,
+        "StatusType": {
+          "IsOperational": true,
+          "IsUserSelectable": true,
+          "ID": 50,
+          "Title": "Operational"
+        },
+        "LevelID": null,
+        "Level": null,
+        "Amps": null,
+        "Voltage": null,
+        "PowerKW": null,
+        "CurrentTypeID": null,
+        "CurrentType": null,
+        "Quantity": null,
+        "Comments": null
+      }
+    ],
+    "MediaItems": null,
+    "MetadataValues": null,
+    "IsRecentlyVerified": false,
+    "DateLastVerified": null
+  }
+]
