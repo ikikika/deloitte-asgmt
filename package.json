@@ -6,6 +6,7 @@
   "main": "main.js",
   "dependencies": {
     "chart.js": "^2.8.0",
+    "chartjs-plugin-zoom": "^0.7.0",
     "colormap": "2.3.1",
     "ol": "6.0.0-beta.6",
     "ol-hashed": "2.0.0",
