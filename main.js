@@ -15,24 +15,18 @@ import {Icon, Style} from 'ol/style';
 import Chart from 'chart.js';
 
 const sourcePowerStations = new VectorSource();
-
 const renderPowerStations = new XMLHttpRequest();
-renderPowerStations.open('GET', 'data/power1.csv');
+renderPowerStations.open('GET', 'http://localhost:8000/api/power_station/all');
 renderPowerStations.onload = function() {
-  const csv = renderPowerStations.responseText;
+  const powerStations = JSON.parse(renderPowerStations.responseText).data;
   const features = [];
-  let prevIndex = csv.indexOf('\n') + 1; // scan past the header line
-  let curIndex;
-  while ((curIndex = csv.indexOf('\n', prevIndex)) != -1) {
-    const line = csv.substr(prevIndex, curIndex - prevIndex).split(',');
-    prevIndex = curIndex + 1;
-    const coords = fromLonLat([parseFloat(line[1]), parseFloat(line[2])]);
-    if (isNaN(coords[0]) || isNaN(coords[1])) {
-      // guard against bad data
-      continue;
-    }
+  powerStations.map(powerStn => {
+    const coords = fromLonLat([
+      parseFloat(powerStn.longitude),
+      parseFloat(powerStn.latitude)
+    ]);
     const iconFeature = new Feature({
-      name: line[0] || 0,
+      name: powerStn.name + ' (ID: ' + powerStn.id + ')',
       geometry: new Point(coords),
       type: 'grid'
     });
@@ -48,27 +42,32 @@ renderPowerStations.onload = function() {
     });
     iconFeature.setStyle(iconStyle);
     features.push(iconFeature);
-  }
+  });
   sourcePowerStations.addFeatures(features);
 };
 renderPowerStations.send();
 
-const sourceChargePoint = new VectorSource();
+const sourceChargePoints = new VectorSource();
 const renderChargePoints = new XMLHttpRequest();
-renderChargePoints.responseType = 'json';
-renderChargePoints.open('GET', 'data/chargepoints.json');
+renderChargePoints.open(
+  'GET',
+  'http://localhost:8000/api/charging_station/all'
+);
 renderChargePoints.onload = function() {
-  const json = renderChargePoints.response;
+  const chargePoints = JSON.parse(renderChargePoints.responseText).data;
   const features = [];
-  json.map(chargePt => {
+  chargePoints.map(chargePt => {
     const coords = fromLonLat([
-      parseFloat(chargePt.AddressInfo.Longitude),
-      parseFloat(chargePt.AddressInfo.Latitude)
+      parseFloat(chargePt.longitude),
+      parseFloat(chargePt.latitude)
     ]);
     const iconFeature = new Feature({
-      name: chargePt.AddressInfo.Title || 0,
+      name: chargePt.name,
       geometry: new Point(coords),
-      type: 'charge'
+      type: 'charge',
+      nearest_ps_id: chargePt.nearest_ps_id,
+      nearest_ps_coord:
+        '(' + chargePt.nearest_ps_long + ', ' + chargePt.nearest_ps_lat + ')'
     });
     const iconStyle = new Style({
       image: new Icon({
@@ -83,7 +82,7 @@ renderChargePoints.onload = function() {
     iconFeature.setStyle(iconStyle);
     features.push(iconFeature);
   });
-  sourceChargePoint.addFeatures(features);
+  sourceChargePoints.addFeatures(features);
 };
 renderChargePoints.send();
 
@@ -91,7 +90,7 @@ const layerPowerStations = new VectorLayer({
   source: sourcePowerStations
 });
 const layerChargePoints = new VectorLayer({
-  source: sourceChargePoint
+  source: sourceChargePoints
 });
 
 // Elements that make up the popup.
@@ -136,15 +135,29 @@ map.on('singleclick', function(evt) {
     features.push(feature);
   });
   const type = features[0] ? features[0].values_.type : null;
-
+  const ctx = document.getElementById('myChart');
   if (type == 'charge') {
     const coord = features[0].getGeometry().getCoordinates();
     title.innerHTML = '<h4>' + features[0].values_.name + '</h4>';
+    ctx.style.display = 'block';
+    content.innerHTML =
+      '<p>Nearest Power Station at: ' +
+      features[0].values_.nearest_ps_coord +
+      '<br/>(ID: ' +
+      features[0].values_.nearest_ps_id +
+      ')</p>';
+    overlay.setPosition(coord);
+  } else if (type == 'grid') {
+    const coord = features[0].getGeometry().getCoordinates();
+    title.innerHTML = '<h4>' + features[0].values_.name + '</h4>';
+    ctx.style.display = 'none';
+    content.innerHTML = '';
     overlay.setPosition(coord);
   }
 });
 
 const ctx = document.getElementById('myChart');
+// eslint-disable-next-line no-unused-vars
 const myChart = new Chart(ctx, {
   type: 'bar',
   data: {
