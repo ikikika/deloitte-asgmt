@@ -191,7 +191,8 @@ map.on('singleclick', function(evt) {
   // End generate chart
   if (type == 'charge') {
     const coord = features[0].getGeometry().getCoordinates();
-    title.innerHTML = '<h4>' + features[0].values_.name + '</h4>';
+    title.innerHTML =
+      '<h4>Charging Station: ' + features[0].values_.name + '</h4>';
     ctx.style.display = 'block';
     content.innerHTML =
       '<p>Nearest Power Station at: ' +
