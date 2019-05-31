@@ -12,6 +12,8 @@ import Overlay from 'ol/Overlay';
 
 import {Icon, Style} from 'ol/style';
 
+import Chart from 'chart.js';
+
 const sourcePowerStations = new VectorSource();
 
 const renderPowerStations = new XMLHttpRequest();
@@ -94,6 +96,7 @@ const layerChargePoints = new VectorLayer({
 
 // Elements that make up the popup.
 const container = document.getElementById('popup');
+const title = document.getElementById('popup-title');
 const content = document.getElementById('popup-content');
 const closer = document.getElementById('popup-closer');
 const overlay = new Overlay({
@@ -132,12 +135,61 @@ map.on('singleclick', function(evt) {
   map.forEachFeatureAtPixel(evt.pixel, function(feature, layer) {
     features.push(feature);
   });
-
   const type = features[0] ? features[0].values_.type : null;
 
   if (type == 'charge') {
     const coord = features[0].getGeometry().getCoordinates();
-    content.innerHTML = '<p>You clicked here</code>';
+    title.innerHTML = '<h4>' + features[0].values_.name + '</h4>';
     overlay.setPosition(coord);
+  }
+});
+
+const ctx = document.getElementById('myChart');
+const myChart = new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['200', '400', '600', '800', '1000', '1200'],
+    datasets: [
+      {
+        label: 'Estimated Electric Vehicle Charging Load',
+        data: [
+          Math.random() * 1000,
+          Math.random() * 1000,
+          Math.random() * 1000,
+          Math.random() * 1000,
+          Math.random() * 1000,
+          Math.random() * 1000
+        ],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.2)',
+          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(75, 192, 192, 0.2)',
+          'rgba(153, 102, 255, 0.2)',
+          'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)',
+          'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+      }
+    ]
+  },
+  options: {
+    scales: {
+      yAxes: [
+        {
+          scaleLabel: {
+            display: true,
+            labelString: 'Watt'
+          }
+        }
+      ]
+    }
   }
 });
