@@ -136,7 +136,59 @@ map.on('singleclick', function(evt) {
     features.push(feature);
   });
   const type = features[0] ? features[0].values_.type : null;
+  // Start generate chart
   const ctx = document.getElementById('myChart');
+  // eslint-disable-next-line no-unused-vars
+  const myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ['0', '200', '400', '600', '800', '1000', '1200', '1400'],
+      datasets: [
+        {
+          label: 'Estimated Electric Vehicle Charging Load',
+          data: [
+            Math.random() * 1000,
+            Math.random() * 1000,
+            Math.random() * 1000,
+            Math.random() * 1000,
+            Math.random() * 1000,
+            Math.random() * 1000,
+            Math.random() * 1000,
+            Math.random() * 1000
+          ],
+          borderColor: 'rgb(255, 99, 132)'
+        }
+      ]
+    },
+    options: {
+      scales: {
+        yAxes: [
+          {
+            scaleLabel: {
+              display: true,
+              labelString: 'Watt'
+            }
+          }
+        ]
+      },
+      pan: {
+        enabled: true,
+        mode: 'xy'
+      },
+      zoom: {
+        enabled: true,
+        mode: 'xy'
+      },
+      tooltips: {
+        callbacks: {
+          label: function(tooltipItem, data) {
+            return tooltipItem.yLabel;
+          }
+        }
+      }
+    }
+  });
+  // End generate chart
   if (type == 'charge') {
     const coord = features[0].getGeometry().getCoordinates();
     title.innerHTML = '<h4>' + features[0].values_.name + '</h4>';
@@ -154,59 +206,5 @@ map.on('singleclick', function(evt) {
     ctx.style.display = 'none';
     content.innerHTML = '';
     overlay.setPosition(coord);
-  }
-});
-
-const ctx = document.getElementById('myChart');
-// eslint-disable-next-line no-unused-vars
-const myChart = new Chart(ctx, {
-  type: 'line',
-  data: {
-    labels: ['200', '400', '600', '800', '1000', '1200'],
-    datasets: [
-      {
-        label: 'Estimated Electric Vehicle Charging Load',
-        data: [
-          Math.random() * 1000,
-          Math.random() * 1000,
-          Math.random() * 1000,
-          Math.random() * 1000,
-          Math.random() * 1000,
-          Math.random() * 1000
-        ],
-        borderColor: 'rgb(255, 99, 132)'
-      }
-    ]
-  },
-  options: {
-    scales: {
-      yAxes: [
-        {
-          scaleLabel: {
-            display: true,
-            labelString: 'Watt'
-          }
-        }
-      ]
-    },
-    // Container for pan options
-    pan: {
-      // Boolean to enable panning
-      enabled: true,
-
-      // Panning directions. Remove the appropriate direction to disable
-      // Eg. 'y' would only allow panning in the y direction
-      mode: 'xy'
-    },
-
-    // Container for zoom options
-    zoom: {
-      // Boolean to enable zooming
-      enabled: true,
-
-      // Zooming directions. Remove the appropriate direction to disable
-      // Eg. 'y' would only allow zooming in the y direction
-      mode: 'xy'
-    }
   }
 });
