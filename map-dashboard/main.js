@@ -17,7 +17,10 @@ import 'chartjs-plugin-zoom';
 
 const sourcePowerStations = new VectorSource();
 const renderPowerStations = new XMLHttpRequest();
-renderPowerStations.open('GET', 'http://localhost:8000/api/power_station/all');
+renderPowerStations.open(
+  'GET',
+  'http://mapapi.jitooi.com/api/power_station/all'
+);
 renderPowerStations.onload = function() {
   const powerStations = JSON.parse(renderPowerStations.responseText).data;
   const features = [];
@@ -52,7 +55,7 @@ const sourceChargePoints = new VectorSource();
 const renderChargePoints = new XMLHttpRequest();
 renderChargePoints.open(
   'GET',
-  'http://localhost:8000/api/charging_station/all'
+  'http://mapapi.jitooi.com/api/charging_station/all'
 );
 renderChargePoints.onload = function() {
   const chargePoints = JSON.parse(renderChargePoints.responseText).data;
@@ -98,6 +101,7 @@ const layerChargePoints = new VectorLayer({
 const container = document.getElementById('popup');
 const title = document.getElementById('popup-title');
 const content = document.getElementById('popup-content');
+const chartdiv = document.getElementById('popup-chart');
 const closer = document.getElementById('popup-closer');
 const overlay = new Overlay({
   element: container,
@@ -136,6 +140,29 @@ map.on('singleclick', function(evt) {
     features.push(feature);
   });
   const type = features[0] ? features[0].values_.type : null;
+  generate_chart();
+  if (type == 'charge') {
+    const coord = features[0].getGeometry().getCoordinates();
+    title.innerHTML =
+      '<h4>Charging Station: ' + features[0].values_.name + '</h4>';
+    chartdiv.style.display = 'block';
+    content.innerHTML =
+      '<p>Nearest Power Station at: ' +
+      features[0].values_.nearest_ps_coord +
+      '<br/>(ID: ' +
+      features[0].values_.nearest_ps_id +
+      ')</p>';
+    overlay.setPosition(coord);
+  } else if (type == 'grid') {
+    const coord = features[0].getGeometry().getCoordinates();
+    title.innerHTML = '<h4>' + features[0].values_.name + '</h4>';
+    chartdiv.style.display = 'none';
+    content.innerHTML = '';
+    overlay.setPosition(coord);
+  }
+});
+//generate_chart();
+function generate_chart() {
   // Start generate chart
   const ctx = document.getElementById('myChart');
   // eslint-disable-next-line no-unused-vars
@@ -189,23 +216,4 @@ map.on('singleclick', function(evt) {
     }
   });
   // End generate chart
-  if (type == 'charge') {
-    const coord = features[0].getGeometry().getCoordinates();
-    title.innerHTML =
-      '<h4>Charging Station: ' + features[0].values_.name + '</h4>';
-    ctx.style.display = 'block';
-    content.innerHTML =
-      '<p>Nearest Power Station at: ' +
-      features[0].values_.nearest_ps_coord +
-      '<br/>(ID: ' +
-      features[0].values_.nearest_ps_id +
-      ')</p>';
-    overlay.setPosition(coord);
-  } else if (type == 'grid') {
-    const coord = features[0].getGeometry().getCoordinates();
-    title.innerHTML = '<h4>' + features[0].values_.name + '</h4>';
-    ctx.style.display = 'none';
-    content.innerHTML = '';
-    overlay.setPosition(coord);
-  }
-});
+}
