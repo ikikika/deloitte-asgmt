@@ -63,6 +63,7 @@
     </footer>
     <script src="{{ asset('static/js/docs.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('static/js/expandables.js') }}"></script>
+    @yield('after-script')
 </body>
 
 </html>

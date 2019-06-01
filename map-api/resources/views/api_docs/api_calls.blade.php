@@ -1,89 +1,120 @@
 @extends('api_docs.layouts.app')
 
 @section('pre-script')
-<script src="{{ asset('static/console/lib/object-assign-pollyfill.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/jquery-1.8.0.min.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/jquery.slideto.min.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/jquery.wiggle.min.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/jquery.ba-bbq.min.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/handlebars-4.0.5.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/lodash.min.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/backbone-min.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/swagger-ui.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/highlight.9.1.0.pack.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/highlight.9.1.0.pack_extended.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/jsoneditor.min.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/marked.js') }}" type='text/javascript'></script>
-  <script src="{{ asset('static/console/lib/swagger-oauth.js') }}" type='text/javascript'></script>
-  <script type="text/javascript">
-    $(function () {
-      var url = window.location.search.match(/url=([^&]+)/);
-      if (url && url.length > 1) {
-        url = decodeURIComponent(url[1]);
-      } else {
-        url = "{{ asset('static/console/citypairs.json') }}";
-      }
 
-      hljs.configure({
-        highlightSizeThreshold: 5000
-      });
-
-      // Pre load translate...
-      if(window.SwaggerTranslator) {
-        window.SwaggerTranslator.translate();
-      }
-      window.swaggerUi = new SwaggerUi({
-        url: url,
-        dom_id: "swagger-ui-container",
-        supportedSubmitMethods: ['get', 'post', 'put', 'delete', 'patch'],
-        onComplete: function(swaggerApi, swaggerUi){
-          if(typeof initOAuth == "function") {
-            initOAuth({
-              clientId: "your-client-id",
-              clientSecret: "your-client-secret-if-required",
-              realm: "your-realms",
-              appName: "your-app-name",
-              scopeSeparator: " ",
-              additionalQueryStringParams: {}
-            });
-          }
-
-          if(window.SwaggerTranslator) {
-            window.SwaggerTranslator.translate();
-          }
-        },
-        onFailure: function(data) {
-          log("Unable to Load SwaggerUI");
-        },
-        docExpansion: "full",
-        jsonEditor: false,
-        defaultModelRendering: 'schema',
-        showRequestHeaders: false,
-        showOperationIds: false
-      });
-
-      window.swaggerUi.load();
-
-      function log() {
-        if ('console' in window) {
-          console.log.apply(console, arguments);
-        }
-      }
-  });
-  </script>
 @endsection
 
 @section('content')
 <section class="main-content" role="main">
     <h3 id='api_calls'>API calls</h3>
-    <p>Explore the API here hands-on. </p>
+    <p>Explore the API responses here. </p>
     <p>Need a little help? Read our <a href="{{ route('getting_started') }}">Getting Started</a> to learn about using the API.</p>
 
-    <div id="message-bar" class="swagger-ui-wrap">
-    </div>
+    <table style="width:100%;">
+        <thead>
+            <tr>
+                <th style="width:50px;background-color:#0072CE;color:#fff;">GET</th>
+                <th>/charging_point/all</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <h4>Implementation Notes</h4>
+                    <p>This endpoint returns an array of all charging stations</p>
+                    <h4>Response Class (Status 200)</h4>
+                    <p id="json1"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-    <span class="anchor" id="swagger-ui-offset-fix"> </span>
+    <table style="width:100%;">
+        <thead>
+            <tr>
+                <th style="width:50px;background-color:#0072CE;color:#fff;">GET</th>
+                <th>/charging_point/{id}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <h4>Implementation Notes</h4>
+                    <p>This endpoint returns one charging point by ID</p>
+                    <h4>Response Class (Status 200)</h4>
+                    <p>Charging station with ID exist</p>
+                    <p id="json2"></p>
+                    <h4>Response Class (Status 400)</h4>
+                    <p>Charging station with ID does not exist</p>
+                    <p id="json3"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-    <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+    <table style="width:100%;">
+        <thead>
+            <tr>
+                <th style="width:50px;background-color:#0072CE;color:#fff;">GET</th>
+                <th>/power_station/all</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <h4>Implementation Notes</h4>
+                    <p>This endpoint returns an array of all power stations</p>
+                    <h4>Response Class (Status 200)</h4>
+                    <p id="json4"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
 </section>
+@endsection
+
+@section('after-script')
+<script>
+    const json1 = {
+                    "success": true,
+                    "data": [
+                                {
+                                    "id": 1,
+                                    "name": "IKEA Tebrau",
+                                    "longitude": "103.7979128",
+                                    "latitude": "1.5525572",
+                                    "nearest_ps_id": 217,
+                                    "updated_at": "2019-05-31 13:46:14",
+                                    "nearest_ps_long": "103.7783176",
+                                    "nearest_ps_lat": "1.5461260",
+                                    "created_at": null,
+                                },
+                                "...",
+                                {
+                                    "id": 21,
+                                    "name": "SILK",
+                                    "longitude": "101.7192632",
+                                    "latitude": "3.0286372",
+                                    "nearest_ps_id": 17,
+                                    "updated_at": "2019-05-31 13:46:14",
+                                    "nearest_ps_long": "101.7338029",
+                                    "nearest_ps_lat": "3.0139605",
+                                    "created_at": null,
+                                }
+                            ]
+                    };
+
+        document.getElementById("json1").innerHTML = "<pre>"+JSON.stringify(json1,undefined, 2) +"</pre>"
+
+        const json2 = {"success":true,"data":[{"id":1,"name":"IKEA Tebrau","longitude":"103.7979128","latitude":"1.5525572","nearest_ps_id":217,"created_at":null,"updated_at":"2019-05-31 13:46:14","nearest_ps_long":"103.7783176","nearest_ps_lat":"1.5461260"}]};
+        document.getElementById("json2").innerHTML = "<pre>"+JSON.stringify(json2,undefined, 2) +"</pre>";
+
+        const json3 = {"success":false,"message":"Charging station with id 100 not found"};
+        document.getElementById("json3").innerHTML = "<pre>"+JSON.stringify(json3,undefined, 2) +"</pre>";
+
+        const json4 = {"success":true,"data":[{"id":1,"name":"Substation","longitude":"101.6828513","latitude":"3.0968722","created_at":null,"updated_at":null},{"id":2,"name":"Substation","longitude":"101.6663622","latitude":"3.0770530","created_at":null,"updated_at":null},{"id":3,"name":"Substation","longitude":"101.7075362","latitude":"3.0987255","created_at":null,"updated_at":null}]};
+        document.getElementById("json4").innerHTML = "<pre>"+JSON.stringify(json4,undefined, 2) +"</pre>";
+</script>
 @endsection

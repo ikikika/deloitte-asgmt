@@ -5,9 +5,9 @@
 <section class="main-content" role="main">
     <h3>Field reference for API data</h3>
 
-    <p>The fields below are returned in the API.</p>
+    <p>The fields below are required in the API.</p>
 
-    <h5>Example API Fields</h5>
+    <h5>API Fields</h5>
 
     <table id="city-pairs-fields" class="field-table">
         <colgroup>
