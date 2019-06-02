@@ -43,9 +43,11 @@
                     <p>This endpoint returns one charging point by ID</p>
                     <h4>Response Class (Status 200)</h4>
                     <p>Charging station with ID exist</p>
+                    <p>/charging_point/1</p>
                     <p id="json2"></p>
                     <h4>Response Class (Status 400)</h4>
                     <p>Charging station with ID does not exist</p>
+                    <p>/charging_point/100</p>
                     <p id="json3"></p>
                 </td>
             </tr>
@@ -86,10 +88,11 @@
                                     "longitude": "103.7979128",
                                     "latitude": "1.5525572",
                                     "nearest_ps_id": 217,
-                                    "updated_at": "2019-05-31 13:46:14",
+                                    "nearest_ps_type": "Substation",
                                     "nearest_ps_long": "103.7783176",
                                     "nearest_ps_lat": "1.5461260",
                                     "created_at": null,
+                                    "updated_at": null,
                                 },
                                 "...",
                                 {
@@ -98,17 +101,29 @@
                                     "longitude": "101.7192632",
                                     "latitude": "3.0286372",
                                     "nearest_ps_id": 17,
-                                    "updated_at": "2019-05-31 13:46:14",
+                                    "nearest_ps_type": "Plant",
                                     "nearest_ps_long": "101.7338029",
                                     "nearest_ps_lat": "3.0139605",
                                     "created_at": null,
+                                    "updated_at": null,
                                 }
                             ]
                     };
 
         document.getElementById("json1").innerHTML = "<pre>"+JSON.stringify(json1,undefined, 2) +"</pre>"
 
-        const json2 = {"success":true,"data":[{"id":1,"name":"IKEA Tebrau","longitude":"103.7979128","latitude":"1.5525572","nearest_ps_id":217,"created_at":null,"updated_at":"2019-05-31 13:46:14","nearest_ps_long":"103.7783176","nearest_ps_lat":"1.5461260"}]};
+        const json2 = {"success":true,"data":[{
+                                    "id": 1,
+                                    "name": "IKEA Tebrau",
+                                    "longitude": "103.7979128",
+                                    "latitude": "1.5525572",
+                                    "nearest_ps_id": 217,
+                                    "nearest_ps_type": "Substation",
+                                    "nearest_ps_long": "103.7783176",
+                                    "nearest_ps_lat": "1.5461260",
+                                    "created_at": null,
+                                    "updated_at": null,
+                                }]};
         document.getElementById("json2").innerHTML = "<pre>"+JSON.stringify(json2,undefined, 2) +"</pre>";
 
         const json3 = {"success":false,"message":"Charging station with id 100 not found"};

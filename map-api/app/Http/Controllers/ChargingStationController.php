@@ -57,7 +57,7 @@ class ChargingStationController extends Controller
     }
 
     public function get_charging_station_data($id){
-        $charging_station = ChargingStation::select('charging_stations.*', 'power_stations.longitude as nearest_ps_long', 'power_stations.latitude as nearest_ps_lat')
+        $charging_station = ChargingStation::select('charging_stations.*', 'power_stations.name as nearest_ps_type','power_stations.longitude as nearest_ps_long', 'power_stations.latitude as nearest_ps_lat')
             ->join('power_stations', 'charging_stations.nearest_ps_id', 'power_stations.id')
             ->where('charging_stations.id', $id)
             ->get();

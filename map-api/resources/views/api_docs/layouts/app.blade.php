@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
-  <title>Example API documentation - GSA</title>
+  <title>API Documentation</title>
   <link rel="stylesheet" href="{{ asset('static/css/normalize.css') }}">
   <link rel="stylesheet" href="{{ asset('static/css/style.css') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +24,7 @@
 
     <header class="header cf" role="banner">
         <div class="wrap">
-            <a href="" target="_blank"><h1><span>DELOITTE</span> Assignment</h1></a>
+            <a href="" target="_blank"><h1><span>Map</span> Assignment</h1></a>
         </div>
     </header>
 

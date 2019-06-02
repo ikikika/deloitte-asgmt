@@ -174,14 +174,14 @@ function generate_chart() {
         {
           label: 'Estimated Electric Vehicle Charging Load',
           data: [
-            Math.random() * 1000,
-            Math.random() * 1000,
-            Math.random() * 1000,
-            Math.random() * 1000,
-            Math.random() * 1000,
-            Math.random() * 1000,
-            Math.random() * 1000,
-            Math.random() * 1000
+            number_2dp(Math.random()),
+            number_2dp(Math.random()),
+            number_2dp(Math.random()),
+            number_2dp(Math.random()),
+            number_2dp(Math.random()),
+            number_2dp(Math.random()),
+            number_2dp(Math.random()),
+            number_2dp(Math.random())
           ],
           borderColor: 'rgb(255, 99, 132)'
         }
@@ -216,4 +216,8 @@ function generate_chart() {
     }
   });
   // End generate chart
+}
+
+function number_2dp(number) {
+  return parseFloat(number * 1000).toFixed(2);
 }
