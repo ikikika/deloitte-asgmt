@@ -18,6 +18,44 @@ class ChargingStationController extends Controller
         ], 200);
     }
 
+
+
+    public function get_charging_station_data($id){
+        $charging_station = ChargingStation::select('charging_stations.*', 'power_stations.name as nearest_ps_type','power_stations.longitude as nearest_ps_long', 'power_stations.latitude as nearest_ps_lat')
+            ->join('power_stations', 'charging_stations.nearest_ps_id', 'power_stations.id')
+            ->where('charging_stations.id', $id)
+            ->get();
+
+        if (sizeof($charging_station) == 0) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Charging station with id ' . $id . ' not found'
+            ], 400);
+        }
+
+        return response()->json([
+            'success' => true,
+            'data' => $charging_station
+        ], 200);
+    }
+
+
+
+    ////
+
+    public function parse_cs(Request $request){
+        $json = json_decode(file_get_contents($request->urlname), true);
+
+        foreach( $json as $cs){
+            ChargingStation::create([
+                'longitude' => $cs["AddressInfo"]["Longitude"],
+                'latitude' => $cs["AddressInfo"]["Latitude"],
+                'name' => $cs["AddressInfo"]["Title"],
+            ]);
+        }
+        return "ok";
+    }
+
     public function find_nearest_ps(){
         $power_stations = PowerStation::all();
         $charging_stations = ChargingStation::all();
@@ -56,22 +94,6 @@ class ChargingStationController extends Controller
         //dd($did);
     }
 
-    public function get_charging_station_data($id){
-        $charging_station = ChargingStation::select('charging_stations.*', 'power_stations.name as nearest_ps_type','power_stations.longitude as nearest_ps_long', 'power_stations.latitude as nearest_ps_lat')
-            ->join('power_stations', 'charging_stations.nearest_ps_id', 'power_stations.id')
-            ->where('charging_stations.id', $id)
-            ->get();
+    /////
 
-        if (sizeof($charging_station) == 0) {
-            return response()->json([
-                'success' => false,
-                'message' => 'Charging station with id ' . $id . ' not found'
-            ], 400);
-        }
-
-        return response()->json([
-            'success' => true,
-            'data' => $charging_station
-        ], 200);
-    }
 }

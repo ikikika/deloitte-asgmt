@@ -38,3 +38,14 @@ Route::get('/api_docs/faq', function(){
 Route::get('/api_docs/contact', function(){
     return view('api_docs.contact');
 })->name('contact');
+
+Route::get('/parse_ps', function(){
+    return view('parse_ps');
+})->name('contact');
+Route::post('/parse_ps', 'PowerStationController@parse_ps')->name('parse_ps');
+
+Route::get('/parse_cs', function(){
+    return view('parse_cs');
+})->name('contact');
+Route::post('/parse_cs', 'ChargingStationController@parse_cs')->name('parse_cs');
+Route::get('/find_nearest_ps', 'ChargingStationController@find_nearest_ps');

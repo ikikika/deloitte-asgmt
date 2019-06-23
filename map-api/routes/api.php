@@ -15,10 +15,10 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix'=>'power_station'], function(){
     Route::get('/all', 'PowerStationController@get_all_power_stations');
+
 });
 
 Route::group(['prefix'=>'charging_station'], function(){
     Route::get('/all', 'ChargingStationController@get_all_charging_stations');
-    Route::get('/find_nearest_ps', 'ChargingStationController@find_nearest_ps');
     Route::get('/{id}', 'ChargingStationController@get_charging_station_data');
 });
